@@ -13,7 +13,7 @@ function App() {
 
     return (
         <>
-            <BrowserRouter basename='/space-tourism-web'>
+            <BrowserRouter basename='/space-tourism-web/'>
                 <Header />
 
                 <Routes>

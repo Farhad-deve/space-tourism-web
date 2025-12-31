@@ -13,14 +13,14 @@ function App() {
 
     return (
         <>
-            <BrowserRouter>
+            <BrowserRouter basename='/space-tourism-web'>
                 <Header />
 
                 <Routes>
-                    <Route path="/space-tourism-web/" element={<Home />} />
-                    <Route path="/space-tourism-web/destination" element={<Destination />} />
-                    <Route path="/space-tourism-web/crew" element={<Crew />} />
-                    <Route path="/space-tourism-web/technology" element={<Technology />} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/destination" element={<Destination />} />
+                    <Route path="/crew" element={<Crew />} />
+                    <Route path="/technology" element={<Technology />} />
                 </Routes>
             </BrowserRouter>
         </>

@@ -1,0 +1,166 @@
+.home-sec {
+    background-image: url('/assets/home/background-home-desktop.jpg');
+    height: 100vh;
+}
+
+.destination-sec {
+    background-image: url('/assets/destination/background-destination-desktop.jpg');
+    height: 100%;
+}
+
+.crew-sec {
+    background-image: url('/assets/crew/background-crew-desktop.jpg');
+    height: 100%;
+}
+
+.technology-sec {
+    background-image: url('/assets/technology/background-technology-desktop.jpg');
+    height: 100%;
+}
+
+.line {
+    height: 1px;
+    width: 80%;
+    opacity: 0.5;
+    background-color: var(--blue-300);
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.line-2 {
+    height: 1px;
+    opacity: 0.5;
+    background-color: var(--blue-300);
+}
+
+.explore-btn {
+    width: clamp(10rem, 15vw, 15rem);
+    height: clamp(10rem, 15vw, 15rem);
+}
+
+.explore-btn:hover {
+    box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.21);
+    color: var(--blue-300);
+}
+
+.menu {
+    backdrop-filter: blur(0.5rem);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0 3rem 0 10rem;
+}
+
+.active-nav {
+    background: linear-gradient(var(--white));
+    background-position: bottom;
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+}
+
+.inactive-nav {
+    background: linear-gradient(var(--blue-300));
+    background-position: bottom;
+    background-size: 0 3px;
+    background-repeat: no-repeat;
+}
+
+.inactive-nav:hover {
+    background-size: 100% 3px;
+}
+
+.dot {
+    width: 1rem;
+    height: 1rem;
+}
+
+.circle {
+    width: 5rem;
+    height: 5rem;
+}
+
+.inactive-dot:hover,
+.inactive-circle:hover {
+    opacity: 1;
+}
+
+.inactive-circle:hover {
+    border: 1px solid var(--white);
+}
+
+@media (max-width: 1024px) {
+    .home-sec {
+        background-image: url('/assets/home/background-home-tablet.jpg');
+    }
+
+    .destination-sec {
+        background-image: url('/assets/destination/background-destination-tablet.jpg');
+    }
+
+    .crew-sec {
+        background-image: url('/assets/crew/background-crew-tablet.jpg');
+    }
+
+    .technology-sec {
+        background-image: url('/assets/technology/background-technology-tablet.jpg');
+    }
+
+    .menu {
+        padding: 0 1.5rem 0 4rem;
+    }
+
+    .line {
+        width: 50%;
+        left: 15%;
+    }
+}
+
+@media (max-width: 500px) {
+    .home-sec {
+        background-image: url('/assets/home/background-home-mobile.jpg');
+    }
+
+    .destination-sec {
+        background-image: url('/assets/destination/background-destination-mobile.jpg');
+    }
+
+    .crew-sec {
+        background-image: url('/assets/crew/background-crew-mobile.jpg');
+    }
+
+    .technology-sec {
+        background-image: url('/assets/technology/background-technology-mobile.jpg');
+    }
+
+    .menu {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        width: 60%;
+        padding: 7rem 0rem 0 2rem;
+        transform: translateX(50%);
+        pointer-events: none;
+    }
+
+    .menu.active {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+    }
+
+    .icon-close {
+        top: 2rem;
+        right: 2rem;
+    }
+
+    header nav .active-nav {
+        background-position: right;
+        background-size: 3px 50%;
+    }
+
+    .circle {
+        width: 3rem;
+        height: 3rem;
+    }
+}
